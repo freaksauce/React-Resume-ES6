@@ -121,6 +121,11 @@ gulp.task('lint', () => {
   .pipe(eslint.format());
 });
 
+gulp.task('minify', () => {
+  gulp.src(paths.bundle)
+  .pipe(uglify());
+});
+
 gulp.task('watchTask', () => {
   gulp.watch(paths.srcCss, ['styles']);
   gulp.watch(paths.srcJsx, ['lint']);
@@ -137,5 +142,5 @@ gulp.task('watch', cb => {
 
 gulp.task('build', cb => {
   process.env.NODE_ENV = 'production';
-  runSequence('clean', ['browserify', 'copy-resume', 'styles', 'htmlReplace', 'images'], cb);
+  runSequence('clean', ['browserify', 'minify', 'copy-resume', 'styles', 'htmlReplace', 'images'], cb);
 });
