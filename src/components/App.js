@@ -46,7 +46,7 @@ export default class App extends React.Component {
                 </div>
               </div>
             )
-    }else{
+    } else {
       return <p>Loading...</p>
     }
 
