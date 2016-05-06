@@ -4,8 +4,10 @@ body {
 aside, main {
   padding: 10px!important;
 }
-main {
-  padding-left: 0!important;
+@media (min-width: 992px) {
+  main {
+    padding-left: 0!important;
+  }
 }
 aside .inner, main .inner {
   background: #fff;
