@@ -10,7 +10,7 @@ export default class App extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {jsonObj: props.jsonObj};
+    this.state = {jsonObj: null};
 
     //ajax call to get resume file
     $.get(this.props.source, function(result) {
