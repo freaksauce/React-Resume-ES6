@@ -5,8 +5,8 @@ export default class Education extends React.Component {
   render() {
 
     var getEducation = 	this.props.educationData.map(function(item) {
-  		var startdate = moment(item.startDate).format("MMM, YYYY");
-  		var enddate = moment(item.endDate).format("MMM, YYYY");
+  		var startdate = moment(item.startDate).format('MMM, YYYY');
+  		var enddate = moment(item.endDate).format('MMM, YYYY');
   		return (
           <div>
             <h3>{item.studyType} {item.area}</h3>

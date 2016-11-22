@@ -3,15 +3,15 @@ import React from 'react';
 export default class WorkItem extends React.Component {
 
   getWorkDates() {
-    var startdate = moment(this.props.workItemData.startDate).format("MMM, YYYY");
+    var startdate = moment(this.props.workItemData.startDate).format('MMM, YYYY');
     var enddate;
-    if (this.props.workItemData.endDate !== "") {
-      enddate = moment(this.props.workItemData.endDate).format("MMM, YYYY");
-    }else{
-      enddate = "Present";
+    if (this.props.workItemData.endDate !== '') {
+      enddate = moment(this.props.workItemData.endDate).format('MMM, YYYY');
+    } else {
+      enddate = 'Present';
     }
 
-    return <span className="startdate">{startdate} - {enddate}</span>
+    return <span className='startdate'>{startdate} - {enddate}</span>
   }
 
   render() {
