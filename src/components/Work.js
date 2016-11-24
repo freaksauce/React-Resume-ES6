@@ -5,9 +5,9 @@ export default class Work extends React.Component {
 
   getWorkExperience() {
     const workItems = [];
-    $.each(this.props.workData, function(i, val) {
+    this.props.workData.forEach((i, val) => {
       workItems.push(<WorkItem workItemData={val}/>);
-    });
+    })
     return workItems;
   }
 
