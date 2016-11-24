@@ -5,7 +5,7 @@ export default class Work extends React.Component {
 
   getWorkExperience() {
     const workItems = [];
-    this.props.workData.forEach((i, val) => {
+    this.props.workData.forEach((val) => {
       workItems.push(<WorkItem workItemData={val}/>);
     })
     return workItems;
