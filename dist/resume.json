@@ -2,7 +2,7 @@
   "basics": {
     "name": "Jonathan Bloomer",
     "label": "Front End Developer",
-    "picture": "dist/images/profilePhoto.jpg",
+    "picture": "./images/profilePhoto.jpg",
     "email": "jonbloomer@gmail.com",
     "phone": "0403933281",
     "website": "http://freaksauce.com",
