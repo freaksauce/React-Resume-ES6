@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import Profile from './Profile';
 import About from './About';
 import Work from './Work';
@@ -13,10 +14,10 @@ export default class App extends React.Component {
     this.state = {jsonObj: null};
 
     //ajax call to get resume file
-    $.get(this.props.source, function(result) {
-        // console.log(result);
-      	this.setState({jsonObj: result});
-  		}.bind(this));
+    axios.get(this.props.source)
+      .then(result => {
+        this.setState({jsonObj: result});
+      });
   }
 
   render() {

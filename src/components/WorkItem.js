@@ -1,4 +1,5 @@
 import React from 'react';
+import * as moment from 'moment';
 
 export default class WorkItem extends React.Component {
 
