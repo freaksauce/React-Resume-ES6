@@ -16,7 +16,7 @@ export default class App extends React.Component {
     //ajax call to get resume file
     axios.get(this.props.source)
       .then(result => {
-        this.setState({jsonObj: result});
+        this.setState({jsonObj: result.data});
       });
   }
 
