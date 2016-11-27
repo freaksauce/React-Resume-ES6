@@ -1,11 +1,8 @@
 import React from 'react';
 
-export default class Skills extends React.Component {
-
-  render() {
-
-    let getSkills = this.props.skillsData[0].keywords.map(function(item) {
-      return (<li><span className="label label-success">{item}</span></li>)
+const Skills = props => {
+    const getSkills = props.skillsData[0].keywords.map(function(item, index) {
+      return (<li key={index}><span className="label label-success">{item}</span></li>)
     });
 
   	return (
@@ -14,7 +11,6 @@ export default class Skills extends React.Component {
         <ul className="skills-list list-inline">{getSkills}</ul>
       </section>
   	)
-
-  }
-
 };
+
+export default Skills;

@@ -1,15 +1,9 @@
 import React from 'react';
 
-export default class Profile extends React.Component {
-
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    const profileObj = this.props.profileData;
+const Profile = props => {
+    const profileObj = props.profileData;
     return  <div>
-                  <div className="profileImg"><img className="img-circle center-block" src={profileObj.picture} width="200" /></div>
+                  <div className="profileImg"><img role="presentation" className="img-circle center-block" src={profileObj.picture} width="200" /></div>
                   <h1 className="text-center">{profileObj.name}</h1>
                   <h2 className="text-center">{profileObj.label}</h2>
                   <div className="divider"></div>
@@ -24,7 +18,7 @@ export default class Profile extends React.Component {
                   </ul>
                   <div className="divider"></div>
                   <p>I built this site with <a href="https://facebook.github.io/react/">React</a> components and a <a href="https://jsonresume.org/schema/">JSON Resume Schema</a>. The full source code can be found in <a href="https://github.com/freaksauce/React-Resume-ES6">my Github repo</a>.</p>
-                </div>
-  }
-
+            </div>
 };
+
+export default Profile;

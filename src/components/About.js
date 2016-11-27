@@ -1,14 +1,12 @@
 import React from 'react';
 
-export default class About extends React.Component {
-
-  render() {
+const About = props => {
     return (
       <section className="about">
         <h2 className="text-uppercase"><i className="fa fa-lg fa-user"></i> About</h2>
-        <div>{this.props.aboutData}</div>
+        <div>{props.aboutData}</div>
       </section>
     );
-  }
-
 };
+
+export default About;

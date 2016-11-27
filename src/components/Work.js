@@ -1,23 +1,21 @@
 import React from 'react';
 import WorkItem from './WorkItem';
 
-export default class Work extends React.Component {
+const Work = props => {
+    const getWorkExperience = () => {
+        const workItems = [];
+        props.workData.forEach((val, index) => {
+          workItems.push(<WorkItem key={index} workItemData={val}/>);
+        })
+        return workItems;
+    }
 
-  getWorkExperience() {
-    const workItems = [];
-    this.props.workData.forEach((val) => {
-      workItems.push(<WorkItem workItemData={val}/>);
-    })
-    return workItems;
-  }
-
-  render() {
     return (
       <section className="work">
         <h2 className="text-uppercase"><i className="fa fa-lg fa-building"></i> Work experience</h2>
-        {this.getWorkExperience()}
+        {getWorkExperience()}
       </section>
     );
-  }
-
 };
+
+export default Work;
