@@ -30,16 +30,30 @@
   "work": [
     {
       "company": "IAG",
+      "position": "Senior Front End Developer",
+      "website": "http://nrma.com.au",
+      "startDate": "2016-08-01",
+      "endDate": "",
+      "summary": "I returned to IAG to work as a React developer on a new application. The app uses React/Redux to integrate with custom API's.",
+      "highlights": []
+    },
+    {
+      "company": "Pacific Magazines",
+      "position": "Senior Front End Developer",
+      "website": "",
+      "startDate": "2016-03-01",
+      "endDate": "2016-08-01",
+      "summary": "During my time at Pacific Magazines I worked on a couple of large React applications using React/Redux to integrate with a .NET MVC Application.",
+      "highlights": []
+    },
+    {
+      "company": "IAG",
       "position": "UI Developer",
       "website": "http://nrma.com.au",
       "startDate": "2014-11-01",
-      "endDate": "",
+      "endDate": "2016-03-01",
       "summary": "Working as a UI developer as part of IAG Labs developing html/css/javascript solutions to integrate with the backend systems for the online quoting applications.",
-      "highlights": [
-        "Developed a Google Polymer prototype as a solution to ongoing problems with backend teams using inconsistent markup",
-        "Started to transition existing jQuery plugins over to Typescript",
-        "Became a certified SaFE Agile Practicioner"
-      ]
+      "highlights": []
     },
     {
       "company": "Reactive",
