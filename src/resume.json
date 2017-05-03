@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Jonathan Bloomer",
-    "label": "Front End Developer",
+    "label": "Lead Front End Developer",
     "picture": "./profilePhoto.jpg",
     "email": "jonbloomer@gmail.com",
     "phone": "0403933281",
@@ -30,7 +30,7 @@
   "work": [
     {
       "company": "IAG",
-      "position": "Senior Front End Developer",
+      "position": "Lead Front End Developer",
       "website": "http://nrma.com.au",
       "startDate": "2016-08-01",
       "endDate": "",
