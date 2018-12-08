@@ -42,19 +42,15 @@ jobs:
       - attach_workspace:
           at: ~/repo
       - run:
-          name: Install python-pip
-          # command: sudo apt-get -y -qq install awscli
-          command: sudo apt-get -y -qq install python-pip
+          name: Install AWS CLI
+          command: sudo apt-get -y -qq install awscli
       - run:
-          name: install aws CLI
-          command: pip install awscli
-      # - run:
-      #     name: Gzip css files 
-      #     command: gzip -k -r build/static
+          name: Gzip css files 
+          command: gzip -k -r build/static
       - run:
           name: Deploy to S3
           # command: aws s3 sync --content-encoding 'gzip' dist s3://$AWS_BUCKET/$CIRCLE_TAG/ --exclude "*" --include 'css/*' --include 'assets/*' --include 'fonts/*' --include 'icons/*' --acl public-read
-          command: aws s3 cp build s3://$AWS_BUCKET/ --acl public-read
+          command: aws s3 sync --content-encoding 'gzip' build s3://$AWS_BUCKET/ --acl public-read
 
 workflows:
   version: 2
