@@ -44,13 +44,12 @@ jobs:
       - run:
           name: Install AWS CLI
           command: sudo apt-get -y -qq install awscli
-      - run:
-          name: Gzip css files 
-          command: gzip -k -r build/static
+      # - run:
+      #     name: Gzip css files 
+      #     command: gzip -k -r build/static
       - run:
           name: Deploy to S3
-          # command: aws s3 sync --content-encoding 'gzip' dist s3://$AWS_BUCKET/$CIRCLE_TAG/ --exclude "*" --include 'css/*' --include 'assets/*' --include 'fonts/*' --include 'icons/*' --acl public-read
-          command: aws s3 sync --content-encoding 'gzip' build s3://$AWS_BUCKET/ --acl public-read
+          command: aws s3 sync build s3://$AWS_BUCKET/ --acl public-read
 
 workflows:
   version: 2
