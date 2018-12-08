@@ -44,7 +44,7 @@ jobs:
       - run:
           name: Install python-pip
           # command: sudo apt-get -y -qq install awscli
-          command: sudo apt-get update && apt-get install python-pip
+          command: sudo apt-get -y -qq install python-pip
       - run:
           name: install aws CLI
           command: pip install awscli
