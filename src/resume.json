@@ -6,7 +6,7 @@
     "email": "jonbloomer@gmail.com",
     "phone": "0403933281",
     "website": "http://freaksauce.com",
-    "summary": "Over the past 16 years I have continuously challenged myself with new languages, frameworks and methodologies. My core languages have always been html, css & javascript but I have also worked as a full stack php developer building both bespoke CMS solutions and small business applications. My current role at IAG is Front End Lead for a small React team and have been developing with React and Redux for the past 2 years.",
+    "summary": "Over the past 18 years I have continuously challenged myself with new languages, frameworks and methodologies. My core languages have always been html, css & javascript but I have also worked as a full stack php developer building both bespoke CMS solutions and small business applications. My current role at IAG is Front End Developer (or Software Engineer as IAG prefer to label us) for a small React team and have been developing with React and Redux for the past 3 years.",
     "location": {
       "address": "Sutherland",
       "postalCode": "2232",
@@ -34,7 +34,7 @@
       "website": "http://nrma.com.au",
       "startDate": "2016-08-01",
       "endDate": "",
-      "summary": "I am currently working as a lead front end developer on a small React team building Insurance applications and I am across multiple applications that have been built or are being built using our new development stack. IAG are keen to utilise the latest front end technologies and we have had great success as a team using React/Redux running on a Node Express server and using an API backend architecture to access the various IAG systems. We are striving to increase the quality of our projects with good test coverage and code reviews and improving our continuous integration practices.",
+      "summary": "I am currently working as a Front End Developer on a small React team building Insurance applications and I am across multiple applications that have been developed using our new technology stack. IAG are keen to utilise the latest technologies and we have had great success using React/Redux running on a Node Express server and using an API backend architecture (via APIGEE) to access the various IAG systems. I have also been a key part of a team developing an in-house Design System called Chroma, this is a platform and framework agnostic component library. We have then built a React component library on top of this system which is used for all IAG Customer Labs applications. As part of this team I have been responsible for setting up a CI/CD pipeline using Github/CircleCI/Heroku/NPM & AWS.",
       "highlights": []
     },
     {
