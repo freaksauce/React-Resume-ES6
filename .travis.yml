@@ -1,4 +1,7 @@
 language: node_js
 node_js:
-  - "5.0.0"
-  - "4.0.0"
+  - "7"
+install:
+  - yarn install
+script:
+  - yarn build
